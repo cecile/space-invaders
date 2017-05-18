@@ -1,0 +1,174 @@
+/*** general ***/
+@font-face {
+	font-family: "Fipps";
+	src: url("../font/Fipps-Regular.otf");
+}
+	    
+body{
+    margin :0px;
+	padding : 0px;
+	background-color: #e0e0e0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+	background-image: url("../images/tete-mort-chinois.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: auto;
+	overflow : hidden;
+	font-family: "Fipps";
+}
+	   
+.container {
+	width: 1200px;
+	height: 100%;
+}
+	    
+/*** ecran accueil - ecran perdu ***/
+
+.accueil,
+.perdu {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+	    
+.accueil h2,
+.perdu h2 {
+	text-transform: uppercase;
+	font-size :42px;
+	letter-spacing: 8px;
+	margin: 0px;
+}
+	    
+.accueil p,
+.perdu p{
+	font-size :24px;
+	color :#a00000;
+	letter-spacing: 3px;
+	border: solid 2px black;
+	padding : 3px 8px;
+	text-transform: uppercase;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.perdu > p {
+    text-transform: uppercase;
+    font-size :42px;
+    letter-spacing: 8px;
+    margin: 0px;
+}
+	    
+.accueil p:hover,
+.perdu p:hover{
+	cursor:pointer;
+	background-color: white;
+}
+	    
+.tete-gugus {
+    margin-top :40%;
+}
+	     
+/*** ecran jeux ***/
+	   
+.score {
+    border-bottom: solid 1px red;
+    width: 100%;
+    height: 5%;
+}
+
+.score p{
+	margin: 0px;
+}
+	        
+.ecran-jeux {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jeux {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+	    
+/***  blc tetes de gugus / descente ***/
+	
+.blc-lignes {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    position: absolute;
+}
+	    
+.ligne-1, 
+.ligne-2,
+.ligne-3,
+.ligne-4,
+.ligne-5{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;       
+}
+
+
+.blcTeteImage{
+	margin : 0 20px;
+	width: 40px;
+}
+
+/*** les vies ***/	    
+
+.img-vie {
+	display: flex;
+	justify-content: space-between;
+	padding: 1% 0;     
+}
+
+ .blc-vie {
+	border-top: solid 1px #a00000;
+	width: 100%;
+	height: 10%;
+    display: flex;
+	justify-content: flex-start;
+	margin-bottom: 4%; 
+}
+    
+/*** seringue et pillule ***/
+    
+.seringue-tueuse {
+    position: absolute;
+    top: 90%;
+}
+
+.pilluleLance {
+	position: absolute;
+}
+
+.gugus {
+	margin:  0 20px;
+}
+/*** class cache utilisé utilisé dans js ***/
+
+.cache {
+    display: none;
+}
+
+.score {
+	display: flex;
+}
+
+.textScore {
+	padding-left: 20px;
+	width : auto;
+}
